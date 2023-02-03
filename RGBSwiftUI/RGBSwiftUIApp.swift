@@ -2,7 +2,7 @@
 //  RGBSwiftUIApp.swift
 //  RGBSwiftUI
 //
-//  Created by Кукушкин Денис Сергеевич on 11.11.2022.
+//  Created by Кукушкин Денис Сергеевич on 03.02.2022.
 //
 
 import SwiftUI

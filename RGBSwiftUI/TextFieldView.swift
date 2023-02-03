@@ -7,25 +7,22 @@
 
 import SwiftUI
 
-struct TextFieldView: View {
-    @State private var sliderValue = "0"
+struct ColorTextFieldView: View {
+    @Binding var textFieldValue: String
     
     var body: some View {
-        TextField("color", text: $sliderValue)
-            .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+        TextField("color", text: $textFieldValue)
             .overlay(RoundedRectangle(cornerRadius: 3)
                 .stroke(lineWidth: 1)
                 .foregroundColor(.blue)
             )
-            .shadow(color: .gray, radius: 2)
-            .padding()
-
-    
+            .frame(width: 50)
+            .multilineTextAlignment(.center)
     }
 }
 
-struct TextFieldView_Previews: PreviewProvider {
+struct ColorTextFieldView_Previews: PreviewProvider {
     static var previews: some View {
-        TextFieldView()
+        ColorTextFieldView(textFieldValue: .constant("123"))
     }
 }

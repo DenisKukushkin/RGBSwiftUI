@@ -10,6 +10,8 @@
 		7984CC5B298CF1E500B0A280 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984CC5A298CF1E500B0A280 /* SliderView.swift */; };
 		7984CC5D298CF1F300B0A280 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984CC5C298CF1F300B0A280 /* TextView.swift */; };
 		7984CC5F298CF1FD00B0A280 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984CC5E298CF1FD00B0A280 /* TextFieldView.swift */; };
+		7984CC61298D00A500B0A280 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984CC60298D00A500B0A280 /* ColorSliderView.swift */; };
+		7984CC63298D00CC00B0A280 /* ChangeColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984CC62298D00CC00B0A280 /* ChangeColorView.swift */; };
 		AC0E0660291E692300927EDB /* RGBSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E065F291E692300927EDB /* RGBSwiftUIApp.swift */; };
 		AC0E0662291E692300927EDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E0661291E692300927EDB /* ContentView.swift */; };
 		AC0E0664291E692900927EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0E0663291E692900927EDB /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		7984CC5A298CF1E500B0A280 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		7984CC5C298CF1F300B0A280 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		7984CC5E298CF1FD00B0A280 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		7984CC60298D00A500B0A280 /* ColorSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
+		7984CC62298D00CC00B0A280 /* ChangeColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorView.swift; sourceTree = "<group>"; };
 		AC0E065C291E692300927EDB /* RGBSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC0E065F291E692300927EDB /* RGBSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBSwiftUIApp.swift; sourceTree = "<group>"; };
 		AC0E0661291E692300927EDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,9 +63,11 @@
 			children = (
 				AC0E065F291E692300927EDB /* RGBSwiftUIApp.swift */,
 				AC0E0661291E692300927EDB /* ContentView.swift */,
+				7984CC62298D00CC00B0A280 /* ChangeColorView.swift */,
+				7984CC60298D00A500B0A280 /* ColorSliderView.swift */,
 				7984CC5A298CF1E500B0A280 /* SliderView.swift */,
-				7984CC5C298CF1F300B0A280 /* TextView.swift */,
 				7984CC5E298CF1FD00B0A280 /* TextFieldView.swift */,
+				7984CC5C298CF1F300B0A280 /* TextView.swift */,
 				AC0E0663291E692900927EDB /* Assets.xcassets */,
 				AC0E0665291E692900927EDB /* Preview Content */,
 			);
@@ -150,7 +156,9 @@
 				7984CC5F298CF1FD00B0A280 /* TextFieldView.swift in Sources */,
 				7984CC5D298CF1F300B0A280 /* TextView.swift in Sources */,
 				AC0E0662291E692300927EDB /* ContentView.swift in Sources */,
+				7984CC63298D00CC00B0A280 /* ChangeColorView.swift in Sources */,
 				AC0E0660291E692300927EDB /* RGBSwiftUIApp.swift in Sources */,
+				7984CC61298D00A500B0A280 /* ColorSliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
