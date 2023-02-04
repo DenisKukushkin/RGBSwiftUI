@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ChangeColorView: View {
-    var red: Double
-    var green: Double
-    var blue: Double
+    let red: Double
+    let green: Double
+    let blue: Double
     
     var body: some View {
         
         RoundedRectangle(cornerRadius: 10)
             .frame(height: 120)
-            .overlay(RoundedRectangle(cornerRadius: 15)
+            .overlay(RoundedRectangle(cornerRadius: 10)
                 .stroke(lineWidth: 5)
                 .foregroundColor(.indigo))
             .foregroundColor(Color(red: red / 255, green: green / 255, blue: blue / 255))

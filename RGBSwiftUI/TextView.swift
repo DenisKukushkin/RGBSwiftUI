@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct TextView: View {
-    let text: String
+    let value: String
     
     var body: some View {
-        Text(text)
+        Text(value)
     }
 }
 
 struct TextView_Previews: PreviewProvider {
     static var previews: some View {
-        TextView(text: "123")
+        TextView(value: "123")
     }
 }

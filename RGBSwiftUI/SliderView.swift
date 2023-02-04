@@ -9,16 +9,21 @@ import SwiftUI
 
 struct SliderView: View {
     @Binding var sliderValue: Double
+    @Binding var textFieldValue: String
+
     var color: Color
     
     var body: some View {
         Slider(value: $sliderValue, in: 0...255, step: 1)
             .accentColor(color)
+            .onChange(of: sliderValue) { changedValue in
+                textFieldValue = "\(lround(changedValue))"
+            }
     }
 }
 
 struct SliderView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderView(sliderValue: .constant(80), color: .red)
+        SliderView(sliderValue: .constant(80), textFieldValue: .constant(""), color: .red)
     }
 }

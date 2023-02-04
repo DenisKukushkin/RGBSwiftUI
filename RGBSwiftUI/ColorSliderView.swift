@@ -9,14 +9,18 @@ import SwiftUI
 
 struct ColorSliderView: View {
     @Binding var colorSliderValue: Double
+    @State private var textFieldValue = ""
     
     var color: Color
     
     var body: some View {
         HStack {
-            TextView(text: String(lround(colorSliderValue)))
-            SliderView(sliderValue: $colorSliderValue, color: color)
-            ColorTextFieldView(textFieldValue: .constant(""))
+            TextView(value: String(lround(colorSliderValue)))
+            SliderView(sliderValue: $colorSliderValue, textFieldValue: $textFieldValue, color: color)
+            ColorTextFieldView(numberValue: $colorSliderValue, textFieldValue: $textFieldValue)
+        }
+        .onAppear {
+            textFieldValue = "\(lround(colorSliderValue))"
         }
     }
 }
