@@ -16,14 +16,14 @@ struct SliderView: View {
     var body: some View {
         Slider(value: $sliderValue, in: 0...255, step: 1)
             .accentColor(color)
-            .onChange(of: sliderValue) { changedValue in
-                textFieldValue = "\(lround(changedValue))"
+            .onChange(of: sliderValue) { newSliderValue in
+                textFieldValue = "\(lround(newSliderValue))"
             }
     }
 }
 
 struct SliderView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderView(sliderValue: .constant(80), textFieldValue: .constant(""), color: .red)
+        SliderView(sliderValue: .constant(80), textFieldValue: .constant(""), color: .indigo)
     }
 }

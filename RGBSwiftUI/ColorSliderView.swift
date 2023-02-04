@@ -15,7 +15,7 @@ struct ColorSliderView: View {
     
     var body: some View {
         HStack {
-            TextView(value: String(lround(colorSliderValue)))
+            TextView(text: String(lround(colorSliderValue)))
             SliderView(sliderValue: $colorSliderValue, textFieldValue: $textFieldValue, color: color)
             ColorTextFieldView(numberValue: $colorSliderValue, textFieldValue: $textFieldValue)
         }

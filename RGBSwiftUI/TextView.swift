@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct TextView: View {
-    let value: String
+    let text: String
     
     var body: some View {
-        Text(value)
+        Text(text)
+            .frame(width: 31)
     }
 }
 
 struct TextView_Previews: PreviewProvider {
     static var previews: some View {
-        TextView(value: "123")
+        TextView(text: "123")
     }
 }

@@ -13,13 +13,18 @@ struct ContentView: View {
     @State private var blueSliderValue = Double.random(in: 0...255)
     
     var body: some View {
-        VStack {
-            ChangeColorView(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue)
-            ColorSliderView(colorSliderValue: $redSliderValue, color: .red)
-            ColorSliderView(colorSliderValue: $greenSliderValue, color: .green)
-            ColorSliderView(colorSliderValue: $blueSliderValue, color: .blue)
-        }
-        .padding()
+        VStack (spacing: 40) {
+                ChangeColorView(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue)
+            VStack (spacing: 20) {
+                ColorSliderView(colorSliderValue: $redSliderValue, color: .red)
+                ColorSliderView(colorSliderValue: $greenSliderValue, color: .green)
+                ColorSliderView(colorSliderValue: $blueSliderValue, color: .blue)
+            }
+            Spacer()
+
+            }
+            .padding()
+        
     }
 }
 

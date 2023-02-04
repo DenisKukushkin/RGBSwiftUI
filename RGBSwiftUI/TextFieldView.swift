@@ -13,7 +13,7 @@ struct ColorTextFieldView: View {
     @State private var alertIsOn = false
     
     var body: some View {
-        TextField("color", text: $textFieldValue) { _ in
+        TextField("", text: $textFieldValue) { _ in
             checkNumberValue()
         }
             .overlay(RoundedRectangle(cornerRadius: 3)
