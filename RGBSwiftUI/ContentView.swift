@@ -16,9 +16,9 @@ struct ContentView: View {
         VStack (spacing: 40) {
                 ChangeColorView(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue)
             VStack (spacing: 20) {
-                ColorSliderView(colorSliderValue: $redSliderValue, color: .red)
-                ColorSliderView(colorSliderValue: $greenSliderValue, color: .green)
-                ColorSliderView(colorSliderValue: $blueSliderValue, color: .blue)
+                ColoredSliderView(colorSliderValue: $redSliderValue, color: .red)
+                ColoredSliderView(colorSliderValue: $greenSliderValue, color: .green)
+                ColoredSliderView(colorSliderValue: $blueSliderValue, color: .blue)
             }
             Spacer()
 
